@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userTextField: UITextField!
+    
+    var userText = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func doneBtnPressed(_ sender: Any) {
+        self.userText = userTextField.text!
+        performSegue(withIdentifier: "passData", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! LabelViewController
+        vc.userTextPassed = self.userText
+    }
 
 }
 
