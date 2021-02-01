@@ -10,10 +10,16 @@ import UIKit
 
 class ButtonViewController: UIViewController {
 
+    @IBOutlet weak var locationBtn: UIButton!
+    
+//    var locationChange: UIButton = UIButton()
+    var locationChange: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationBtn.setTitle(locationChange, for: .normal)
+        
 
-        // Do any additional setup after loading the view.
     }
     
     

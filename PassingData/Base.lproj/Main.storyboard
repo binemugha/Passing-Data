@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="97A-eS-2gu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -31,18 +31,6 @@
                                     <action selector="doneBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6j-LP-F0u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLk-qo-d78">
-                                <rect key="frame" x="100" y="597" width="214" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="doneBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwj-6V-NFU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -58,12 +46,11 @@
                     <connections>
                         <outlet property="userTextField" destination="iNJ-TI-Gdg" id="coG-Gy-GZA"/>
                         <segue destination="YMj-aC-6kM" kind="presentation" identifier="passData" id="s8w-YB-CFW"/>
-                        <segue destination="xh3-st-mhr" kind="presentation" id="1RB-CG-bzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="98"/>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
         </scene>
         <!--Label View Controller-->
         <scene sceneID="RF5-9E-htl">
@@ -99,20 +86,82 @@
             </objects>
             <point key="canvasLocation" x="909" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Button View Controller-->
         <scene sceneID="xiu-0r-EXB">
             <objects>
-                <viewController id="xh3-st-mhr" sceneMemberID="viewController">
+                <viewController id="xh3-st-mhr" customClass="ButtonViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVh-DP-6eM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36j-bV-f7P">
+                                <rect key="frame" x="97" y="401" width="220" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="5Pd-Qe-F3c"/>
+                                    <constraint firstAttribute="height" constant="40" id="zmz-Rm-sjR"/>
+                                </constraints>
+                                <state key="normal" title="Lagos">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="36j-bV-f7P" firstAttribute="centerY" secondItem="aVh-DP-6eM" secondAttribute="centerY" id="9r3-7e-RHw"/>
+                            <constraint firstItem="36j-bV-f7P" firstAttribute="centerX" secondItem="aVh-DP-6eM" secondAttribute="centerX" id="hi1-yS-gQH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eZk-1t-iAB"/>
                     </view>
+                    <connections>
+                        <outlet property="locationBtn" destination="36j-bV-f7P" id="Rqa-hk-5ln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFa-cp-3Uh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="98"/>
+            <point key="canvasLocation" x="949" y="887"/>
+        </scene>
+        <!--Next Button View Controller-->
+        <scene sceneID="9GQ-mk-J1E">
+            <objects>
+                <viewController id="97A-eS-2gu" customClass="NextButtonViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KcM-sG-Ex3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZD-ra-8wO">
+                                <rect key="frame" x="100" y="429" width="214" height="38"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="6uG-q0-SXG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="uka-a6-tLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBb-qg-Ngb"/>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dzl-iB-Nrk"/>
+                                    <action selector="nextButtonWasPressed:" destination="97A-eS-2gu" eventType="touchUpInside" id="c6o-ha-2wV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AZD-ra-8wO" firstAttribute="centerX" secondItem="KcM-sG-Ex3" secondAttribute="centerX" id="Ln4-VQ-E2g"/>
+                            <constraint firstItem="AZD-ra-8wO" firstAttribute="centerY" secondItem="KcM-sG-Ex3" secondAttribute="centerY" id="i4d-jX-esz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AC3-Y2-HS7"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButtonLabel" destination="AZD-ra-8wO" id="AAk-C6-LcT"/>
+                        <segue destination="xh3-st-mhr" kind="presentation" identifier="sendLocation" id="Tot-kT-HWT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJt-01-3WH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="887"/>
         </scene>
     </scenes>
 </document>

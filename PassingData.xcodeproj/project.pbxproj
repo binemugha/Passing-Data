@@ -16,6 +16,7 @@
 		18DD55AA25C7292D00ADAAEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DD55A825C7292D00ADAAEE /* LaunchScreen.storyboard */; };
 		18DD55B225C72BFB00ADAAEE /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD55B125C72BFB00ADAAEE /* LabelViewController.swift */; };
 		18DD55B425C7327C00ADAAEE /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD55B325C7327C00ADAAEE /* ButtonViewController.swift */; };
+		18DD55B625C7F4A500ADAAEE /* NextButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD55B525C7F4A500ADAAEE /* NextButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		18DD55AB25C7292D00ADAAEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18DD55B125C72BFB00ADAAEE /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		18DD55B325C7327C00ADAAEE /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		18DD55B525C7F4A500ADAAEE /* NextButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				18DD559E25C7292800ADAAEE /* ViewController.swift */,
 				18DD55B325C7327C00ADAAEE /* ButtonViewController.swift */,
 				18DD55B125C72BFB00ADAAEE /* LabelViewController.swift */,
+				18DD55B525C7F4A500ADAAEE /* NextButtonViewController.swift */,
 				18DD55A025C7292800ADAAEE /* Main.storyboard */,
 				18DD55A625C7292D00ADAAEE /* Assets.xcassets */,
 				18DD55A825C7292D00ADAAEE /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				18DD55B225C72BFB00ADAAEE /* LabelViewController.swift in Sources */,
 				18DD559B25C7292800ADAAEE /* AppDelegate.swift in Sources */,
 				18DD559D25C7292800ADAAEE /* SceneDelegate.swift in Sources */,
+				18DD55B625C7F4A500ADAAEE /* NextButtonViewController.swift in Sources */,
 				18DD55B425C7327C00ADAAEE /* ButtonViewController.swift in Sources */,
 				18DD55A525C7292800ADAAEE /* PassingData.xcdatamodeld in Sources */,
 			);

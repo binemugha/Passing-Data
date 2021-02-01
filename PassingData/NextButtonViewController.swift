@@ -8,30 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NextButtonViewController: UIViewController {
 
-    @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var nextButtonLabel: UIButton!
     
-    var userText = ""
     var buttonTitle = "Abuja"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func doneBtnPressed(_ sender: Any) {
-        self.userText = userTextField.text!
-        performSegue(withIdentifier: "passData", sender: self)
-    }
-    @IBAction func nextButtonPressed(_ sender: Any) {
-        nextButtonLabel.setTitle(buttonTitle, for: .normal)
-        
+    @IBAction func nextButtonWasPressed(_ sender: Any) {
+
         performSegue(withIdentifier: "sendLocation", sender: self)
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! LabelViewController
-        vc.userTextPassed = self.userText
+        var vc = segue.destination as! ButtonViewController
+        vc.locationChange = buttonTitle
     }
     
 
