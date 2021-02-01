@@ -24,7 +24,7 @@ class NextButtonViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! ButtonViewController
+        let vc = segue.destination as! ButtonViewController
         vc.locationChange = buttonTitle
     }
     

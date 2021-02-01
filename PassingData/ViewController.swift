@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! LabelViewController
+        let vc = segue.destination as! LabelViewController
         vc.userTextPassed = self.userText
     }
     
